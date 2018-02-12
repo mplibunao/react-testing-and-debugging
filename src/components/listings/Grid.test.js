@@ -23,3 +23,17 @@ test('The title contains React', () => {
 });
 
 // Arrays
+const data2 = ['React Native', 'MeteorJS'];
+
+test('The list of course mentions React native and MeteorJS', () => {
+  expect(['React Native', 'MeteorJS', 'React']).toEqual(expect.arrayContaining(data2));
+});
+
+// Object
+test('The first course to have a property of Title', () => {
+  expect(data[0]).toHaveProperty('title');
+});
+
+test('The first course to have 31,266 views', () => {
+  expect(data[0]).toHaveProperty('views', '31,266');
+});
