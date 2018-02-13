@@ -9,7 +9,7 @@ exports[`test App snapshot test 1`] = `
         <a
           className="brand-logo center"
           href="#">
-          Courses
+          React
         </a>
       </div>
     </nav>
