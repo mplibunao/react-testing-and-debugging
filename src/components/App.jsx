@@ -5,7 +5,12 @@ import Grid from './listings/Grid';
 import courses from '../data/courses.json';
 
 export default class App extends Component {
-  constructor(props) {
+  state = {
+    courses: Array
+  }
+
+
+  constructor(props: any) {
     super(props);
     this.state = { courses };
   }
